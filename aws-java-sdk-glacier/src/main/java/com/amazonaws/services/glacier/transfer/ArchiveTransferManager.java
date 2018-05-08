@@ -85,7 +85,7 @@ public class ArchiveTransferManager {
     private static final long MINIMUM_PART_SIZE = 1024L * 1024;
 
     /** Threshold, in bytes, for when to use the multipart upload operations */
-    private static final long MULTIPART_UPLOAD_SIZE_THRESHOLD = 1024L * 1024L * 100;
+    private static final long MULTIPART_UPLOAD_SIZE_THRESHOLD = 1024L * 1024L + 1;
 
     /** Default retry time when downloading in multiple chunks using range retrieval */
     private static final int DEFAULT_MAX_RETRIES = 3;
